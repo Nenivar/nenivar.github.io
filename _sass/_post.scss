@@ -36,6 +36,13 @@ ol {
     }
 }
 
+ul {
+    li:before {
+        content: '';
+        border: none;
+    }
+}
+
 .next {
     text-decoration: none;
     font-size: 2em;
