@@ -1,0 +1,68 @@
+$font_text: 'Lato', sans-serif;
+$font_head: 'Playfair Display', serif;
+
+body {
+    margin: 0;
+    background-color: #624a2e;
+    color: #272727;
+    font-family: $font_text;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    max-width: 960px;
+    background-color: whitesmoke;
+    padding: 1em 0 1em 0;
+    /* box-shadow: 0 0 1em .1em; */
+}
+
+#oldheader {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px double lightgray;
+    z-index: 100;
+
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.banner {
+    a {
+        
+    }
+}
+
+#footer {
+    border-top: 1px double lightgray;
+}

@@ -1,0 +1,92 @@
+.highlight pre {
+    display: inline-block;
+  }
+
+.title {
+    text-align: center;
+
+    h1 {
+        font-size:35px;
+    }
+    h2 {
+        margin-top: -15px;
+        font-size: 25px;
+    }
+}
+
+/* thx https://stackoverflow.com/questions/23610151/can-you-style-ordered-list-numbers */
+ol {
+    counter-reset: item;
+    list-style: none;
+    
+    li {
+        counter-increment: item;
+        position: relative;
+        
+        p:first-of-type {
+            font-size: 1.5em;
+            font-family: $font_head;
+        }
+        
+        blockquote p:first-of-type {
+            font-size: initial;
+            font-family: $font_text;
+        }
+    }
+    li:before {
+        content: counter(item);
+        position: absolute;
+        margin-left: -1.5em;
+        margin-top: -.2em;
+        border-bottom: 3px double black;
+        width: 1em;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+ul {
+    li {
+        counter-increment: none;
+    }
+    
+    li:before {
+        content: '';
+        border: none;
+    }
+}
+
+img {
+    max-width: 700px;
+    border: solid 1px gray;
+    margin: 0 auto 0 auto;
+}
+
+blockquote {
+    border-left: 6px double lightgray;
+    margin-left: 0;
+    padding-left: 10px;
+    color: gray;
+}
+
+pre.highlight {
+    padding: 20px;
+    //background-color: lightgray;
+}
+
+/* 
+    stuff used in kramdown
+*/
+
+.no-border {
+    border: none;
+    img {
+        border: none;
+    }
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
