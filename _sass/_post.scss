@@ -90,3 +90,18 @@ pre.highlight {
     display: block;
     margin: auto;
 }
+
+.hide {
+    filter: blur(.25em);
+    transition: filter .1s;
+
+    &:hover {
+        filter: none;
+    }
+}
+
+.highlighter-rouge {
+    background-color: #272822;
+    color: whitesmoke;
+    padding: .25em;
+}
